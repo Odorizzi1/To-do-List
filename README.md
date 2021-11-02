@@ -4,9 +4,9 @@ foco em aprendizado em React aplicando conceitos em projetos reais faz parte do 
 
 dia 1
 
- *create-react-app
- *import
- *JSX
+  *create-react-app
+  * import
+  * JSX
  
  dia 2 
   * State
