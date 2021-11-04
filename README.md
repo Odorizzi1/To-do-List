@@ -16,5 +16,21 @@ dia 1
   dia 3 
   * prop drilling 
   * encontrando e desfazendo bug's no código
-  * 
+
+dia 4
+* deletando tarefas 
+
+* utilização de react-icons 
+
+* criação de um Header
+
+* inserindo ícones de deletar e infos
+
+* entendo páginas no react
+
+* configurando a biblioteca react-router-dom
+
+
+
+
   
