@@ -13,3 +13,8 @@ dia 1
   * Props
   * Reaproveitamento de componentes 
   
+  dia 3 
+  * prop drilling 
+  * encontrando e desfazendo bug's no código
+  * 
+  
