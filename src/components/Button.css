@@ -10,3 +10,7 @@
     cursor: pointer;
     border: none;
 }
+.button:hover{
+    background-color: #444;
+    color: chartreuse;
+}
