@@ -1,41 +1,41 @@
 import React from "react";
+import { CgClose, CgInfo } from "react-icons/cg";
+import { useHistory } from "react-router-dom";
 
-import {CgClose, CgInfo} from 'react-icons/cg'
+import "./Task.css";
 
-import "./Task.css"
-const Task =({ task, handleTaskClick, handleTaskDeletion}) => {
-    return(
-    <div 
-            className="task-container" 
-            style={task.completed ? { borderLeft: "6px solid chartreuse"} :{}} >
+const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
+	const history = useHistory();
 
-        <div className = "task-title" onClick={() =>handleTaskClick(task.id)}>
-            {task.title}
-        </div> 
-        
-        <div className ="buttons-container">
-            <button className= "remove-task-button" 
-            onClick={() =>handleTaskDeletion (task.id)}> <CgClose/> </button>
+	const handleTaskDetailsClick = () => {
+		history.push(`/${task.title}`);
+	};
 
-                <button
+	return (
+		<div
+			className="task-container"
+			style={task.completed ? { borderLeft: "6px solid chartreuse" } : {}}
+		>
+			<div className="task-title" onClick={() => handleTaskClick(task.id)}>
+				{task.title}
+			</div>
+
+			<div className="buttons-container">
+				<button
+					className="remove-task-button"
+					onClick={() => handleTaskDeletion(task.id)}
+				>
+					<CgClose />
+				</button>
+				<button
 					className="see-task-details-button"
-					
-                    onClick={handleTaskClick}	>
+					onClick={handleTaskDetailsClick}
+				>
 					<CgInfo />
 				</button>
-            
-            
-
-        </div>
-        
-   </div>
-
-
-    //return <div className="task-container"> {task.title}
-
-    );
-    
-
+			</div>
+		</div>
+	);
 };
 
 export default Task;
