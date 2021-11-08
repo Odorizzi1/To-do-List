@@ -30,6 +30,23 @@ dia 4
 
 * configurando a biblioteca react-router-dom
 
+* dia 5 e 6 lidando com erro no react-router-dom 
+
+* dia 7 
+Parâmetros na URL
+
+começando o estudo para chamar uma API de tarefas 
+
+* dia 8 e 9
+
+useParams
+
+consumindo API
+
+use effect 
+
+armazenando tarefas na API 
+
 
 
 
